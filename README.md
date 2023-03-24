@@ -8,13 +8,13 @@ This script is created as a pipeline for running RAPID to deconvolve large-scale
 * `tifffile 2022.5.4`
 * `Matlab engine 9.13.7`
 
-## Reference and Dependent library
+## Dependencies and Contributions
 * `RAPID` A Real-time, GPU-Accelerated Parallelized Image processing software for large-scale multiplexed fluorescence microscopy Data.
 [nolanlab/RAPID](https://github.com/nolanlab/RAPID)
-* `OME-TIFF Generator` [SizunJiangLab/OME-TIFF_Generator](https://github.com/SizunJiangLab/OME-TIFF_Generator)
-* All other codes are generated in Sizun Lab. Thanks to Andrew Ma for help
+* `OME-TIFF Generator` [SizunJiangLab/OME-TIFF_Generator, by Huaying Qiu](https://github.com/SizunJiangLab/OME-TIFF_Generator)
+* All other codes in the pipeline are generated in Sizun Lab. Thanks to Andrew Ma for help.
 
-## Usage
+## File preparations
 Set up the `Matlab` and `Python` environment for running `RAPID` and `tifffile` before running this pipeline.
 
 Put your raw high-plex images and files (experiment.json, channelNames.txt, exposure_times.txt) describing experimental details in a same folder.
@@ -34,4 +34,17 @@ Particularly, the structure of the folder as well as the naming of the subfolder
 
 ![Naming instruction](https://user-images.githubusercontent.com/57729689/187006381-9b6ef337-849d-4277-be88-bebde8718680.PNG)
 
-**A standard CODEX Data Transfer will create this folder for you**
+**Please be noted that a standard CODEX Data Transfer will create this folder for you so it is highly recommended.**
+
+## Usage
+This script should be run as follows:
+`python RAPID_pipeline.py <PATH> <COLUMNS> <ROWS> <VENV_PYTHON> <OMETIFF_PATH>`
+
+For each argument,
+* `<PATH>` Path to the directory with raw images you want to process.
+* `<COLUMNS>` Number of columns you want in the final OMETiff - Calculate this according to the number of regions captured. If you have only one region, input 1.
+* `<ROWS>` Number of rows you want in the final OMETiff - Calculate this according to the number of regions captured. If you have only one region, input 1.
+* `<VENV_PYTHON>` The path to the python executable.
+* `<OMETIFF_PATH>` The path to your generate_ome_tiff.py.
+
+The output files will be in the same directory of your raw images.
