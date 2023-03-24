@@ -207,6 +207,6 @@ if nReg>1:
 import subprocess
 
 venv_python = "C:/Users/ServerRight/.conda/envs/RAPID_processing/python.exe" # replace with actual path to virtualenv Python executable
-command = venv_python + " D:/RAPID_processing/generate_ome_tiff.py "+STITCH_OUT_DIR+" 0.38 0.38 8 -o"+EXP_DIR+"RAPID_processed/" #This will create a 8 bit OMETiff
+command = venv_python + " D:/RAPID_processing/generate_ome_tiff.py "+STITCH_OUT_DIR+" 0.38 0.38 8 -o"+EXP_DIR+"RAPID_processed/" #You need to specify the path to 'generate_ome_tiff.py'. This will create a 8 bit OMETiff
 
 subprocess.run(command, shell=True)
