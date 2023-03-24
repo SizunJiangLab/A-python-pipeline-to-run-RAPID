@@ -17,7 +17,7 @@ This script is created as a pipeline for running RAPID to deconvolve large-scale
 ## File preparations
 Set up the `Matlab` and `Python` environment for running `RAPID` and `tifffile` before running this pipeline.
 
-Put your raw high-plex images and files (experiment.json, channelNames.txt, exposure_times.txt) describing experimental details in a same folder.
+Put your raw high-plex images and files (experiment.json, channelNames.txt, exposure_times.txt) describing experimental details in a same folder. If you use "/" when you name the channels in your run, open the 
 
 Particularly, the structure of the folder as well as the naming of the subfolders and images should be exactly like this:
 * cyc001_reg001
