@@ -15,9 +15,9 @@ This script is created as a pipeline for running RAPID to deconvolve large-scale
 * All other codes in the pipeline are generated in Sizun Lab. Thanks to Andrew Ma for help.
 
 ## File preparations
-Set up the `Matlab` and `Python` environment for running `RAPID` and `tifffile` before running this pipeline.
+Set up the `Matlab` and `Python` environment for running `RAPID` and `tifffile` before running this pipeline. Place the scripts in `src` in the same folder with your RAPID library.
 
-Put your raw high-plex images and files (experiment.json, channelNames.txt, exposure_times.txt) describing experimental details in a same folder. If you use "/" when you name the channels in your run, open the 
+Prepare your raw high-plex images and files (experiment.json, channelNames.txt, exposure_times.txt) describing experimental details in a folder.
 
 Particularly, the structure of the folder as well as the naming of the subfolders and images should be exactly like this:
 * cyc001_reg001
@@ -48,3 +48,7 @@ For each argument,
 * `<OMETIFF_PATH>` The path to your generate_ome_tiff.py.
 
 The output files will be in the same directory of your raw images.
+
+Here's an example of running this pipeline:
+**In your command line tool/terminal**
+`python /Users/GuanruiLiao/JiangLab/RAPID_processing/RAPID_pipeline_publish.py /Users/GuanruiLiao/JiangLab/data/Cancer 5 5 /Users/ServerRight/.conda/envs/RAPID_processing/python.exe /Users/GuanruiLiao/JiangLab/generate_ome_tiff.py`
