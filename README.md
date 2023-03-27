@@ -1,6 +1,6 @@
 # A-python-pipeline-to-run-RAPID
 
-This script is created as a pipeline for running RAPID to deconvolve large-scale, high-dimensional fluorescence imaging data, stitch and register images with axial and lateral drift correction, and minimize tissue autofluorescence such as that introduced by erythrocytes, and do some post-processed actions to finally generate a OMETiff for visualization. 
+This script is created as a pipeline for running RAPID to deconvolve large-scale, high-dimensional fluorescence imaging data, stitch and register images with axial and lateral drift correction, and minimize tissue autofluorescence such as that introduced by erythrocytes, and do some post-processed actions to stitch all the regions and generate a OMETiff for visualization. 
 
 ## Software and Library Version
 * `Python 3.9.6`
