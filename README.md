@@ -50,5 +50,7 @@ For each argument,
 The output files will be in the same directory of your raw images.
 
 Here's an example of running this pipeline:
-**In your command line tool/terminal**
+
+**In your command line tool/terminal:**
+
 `python /Users/GuanruiLiao/JiangLab/RAPID_processing/RAPID_pipeline_publish.py /Users/GuanruiLiao/JiangLab/data/Cancer 5 5 /Users/ServerRight/.conda/envs/RAPID_processing/python.exe /Users/GuanruiLiao/JiangLab/generate_ome_tiff.py`
