@@ -46,10 +46,14 @@ For each argument,
 * `<VENV_PYTHON>` The path to the python executable.
 * `<OMETIFF_PATH>` The path to your generate_ome_tiff.py.
 
-The output files will be in the same directory of your raw images.
-
 Here's an example of running this pipeline:
 
 **In your command line tool/terminal:**
 
 `python /Users/GuanruiLiao/JiangLab/RAPID_processing/RAPID_pipeline_publish.py /Users/GuanruiLiao/JiangLab/data/Cancer 5 5 /Users/ServerRight/.conda/envs/RAPID_processing/python.exe /Users/GuanruiLiao/JiangLab/generate_ome_tiff.py`
+
+The output files will be in the same directory of your raw images， including:
+* Main folder - RAPID_processed
+  * Subfolder - RAPID_extracted: includes seperate images of every channel in all the regions
+  * (If you have more than one region) Subfolder - RAPID_stitch: includes seperate images of every channel with all the regions stitched together
+  * RAPID.ome.tiff: The final Tiff file with all the channels and regions combined
