@@ -12,7 +12,6 @@ This script is created as a pipeline for running RAPID to deconvolve large-scale
 * `RAPID` A Real-time, GPU-Accelerated Parallelized Image processing software for large-scale multiplexed fluorescence microscopy Data.
 [nolanlab/RAPID](https://github.com/nolanlab/RAPID)
 * `OME-TIFF Generator` [SizunJiangLab/OME-TIFF_Generator, by Huaying Qiu](https://github.com/SizunJiangLab/OME-TIFF_Generator)
-* All other codes in the pipeline are generated in Sizun Lab. Thanks to Andrew Ma for help.
 
 ## File preparations
 Set up the `Matlab` and `Python` environment for running `RAPID` and `tifffile` before running this pipeline. Place the scripts in `src` in the same folder with your RAPID library.
