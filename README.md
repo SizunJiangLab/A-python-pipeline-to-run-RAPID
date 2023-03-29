@@ -14,7 +14,7 @@ This script is created as a pipeline for running RAPID to deconvolve large-scale
 * `OME-TIFF Generator` [SizunJiangLab/OME-TIFF_Generator, by Huaying Qiu](https://github.com/SizunJiangLab/OME-TIFF_Generator)
 
 ## File preparations
-Set up the `Matlab` and `Python` environment for running `RAPID` and `tifffile` before running this pipeline. Place the scripts in `src` in the same folder with your RAPID library.
+Set up the `Matlab` and `Python` environment for running `RAPID` and `tifffile` before running this pipeline. Place the scripts in `src` in the same folder with your RAPID library. Set the mjipath, ijpath and pluginpath in RAPID_function.m to your local path.
 
 Prepare your raw high-plex images and files (experiment.json, channelNames.txt, exposure_times.txt) describing experimental details in a folder.
 
