@@ -244,6 +244,9 @@ if nReg>1:
 ####################### Make OmeTIFF ####################
 import subprocess
 
-command = venv_python + " "+OMETiff_path+" "+STITCH_OUT_DIR+" 0.38 0.38 8 -o"+EXP_DIR+"RAPID_processed/RAPID" #You need to specify the path to 'generate_ome_tiff.py'. This will create a 8 bit OMETiff
+if nReg>1:
+    command = venv_python + " "+OMETiff_path+" "+STITCH_OUT_DIR+" 0.38 0.38 8 -o"+EXP_DIR+"RAPID_processed/RAPID" #You need to specify the path to 'generate_ome_tiff.py'. This will create a 8 bit OMETiff
+else:
+    command = venv_python + " "+OMETiff_path+" "+EXTRACT_OUT_DIR+'/reg001'+" 0.38 0.38 8 -o"+EXP_DIR+"RAPID_processed/RAPID" #You need to specify the path to 'generate_ome_tiff.py'. This will create a 8 bit OMETiff
 
 subprocess.run(command, shell=True)
